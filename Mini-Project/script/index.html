@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roblox Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <img src="../assets/roblox-logo.png" alt="Roblox Logo" class="logo">
+        <h1 class="header-text">Roblox Game Trailer</h1>
+    </div>
+    <div class="content">
+        <video autoplay muted id="trailer" loop="true">
+            <source src="../assets/game_trailer.mp4 " type="video/mp4">
+        </video>
+    </div>
+    <div class="footer">
+            <p class="footer-text">Enjoy The Roblox Game!</p>
+            <button id="btnVideo" onclick="PlayorPauseVideo()">Pause Video</button>
+
+            <button id="btnGame" onclick="OpenRobloxGame()">Open Roblox Game</button>
+    </div>
+    <script src="script.js"></script>
+    
+</body> 
+</html>

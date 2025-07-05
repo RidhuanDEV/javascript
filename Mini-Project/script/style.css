@@ -1,0 +1,154 @@
+*, html, body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #eaeaea;
+    font-family: 'Arial', sans-serif;
+}
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 9vh;
+    margin-top: 20px;
+}
+.header-text {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin: 20px 0;
+    animation: slide-right-left-opacity 3s linear infinite;
+}
+
+@keyframes slide-right-left-opacity {
+    0% {
+        left: 100%;
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    50% {
+        left: 0;
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        left: -100%;
+        opacity: 0;
+    }
+}
+.logo {
+    width : 80px;
+    height: 100px;
+    margin-right: 20px;
+}
+
+#trailer {
+    width: 100%;
+    height: 70vh;
+    object-fit: cover;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px 0;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eaeaea;
+    height: 12vh;
+    gap: 20px;
+}
+
+
+.footer-text {
+    font-size: 1.2rem;
+    color: black;
+    font-weight: 700;
+    margin-right: 40%;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+#btnVideo{
+    background-color: #000000;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+#btnVideo:hover {
+    background-color: #333333;
+}
+
+#btnGame {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 768px) {
+
+    .header-text {
+        font-size: 1.5rem;
+    }
+    .logo {
+        width: 60px;
+        height: 80px;
+    }
+    #trailer {
+        height: 50vh;
+    }
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .footer-text {
+        font-size: 1rem;
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+
+    .header-text {
+        font-size: 1.2rem;
+    }
+    .logo {
+        width: 50px;
+        height: 70px;
+    }
+    #trailer {
+        height: 40vh;
+    }
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .footer-text {
+        font-size: 0.9rem;
+        margin-right: 0;
+    }   
+}
